@@ -33,7 +33,7 @@
   <div class="container-fluid">
     <div class="row">
       <!-- Sidebar -->
-      <div class="sidebar col-md-4 col-lg-3 collapse d-md-block bg-dark vh-100" id="navbarSupportedContent">
+      <div class="sidebar col-md-4 col-lg-3 collapse d-md-block bg-dark vh-40" id="navbarSupportedContent">
         <a href="/"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none flex-column">
           <!-- user img -->
@@ -46,49 +46,49 @@
         </a>
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
+          <li class="nav-item fw-medium">
             <a href="./index.html" class="nav-link" aria-current="page">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#home"></use>
               </svg>
-              Dashboard
+              <i class="fa-solid fa-house"></i> Dashboard
             </a>
           </li>
           <li>
-            <a href="./sponsorizzazione.html" class="nav-link text-white active">
+            <a href="./sponsorizzazione.html " class="nav-link text-white fw-medium">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#speedometer2"></use>
               </svg>
-              Sponsorizzazione
+              <i class="fa-solid fa-chart-line"></i> Sponsorizzazione
             </a>
           </li>
           <li>
-            <a href="./prodotti.html" class="nav-link text-white">
+            <a href="./prodotti.html" class="nav-link text-white active fw-medium">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#table"></use>
               </svg>
-              Prodotti
+              <i class="fa-solid fa-box-archive"></i> Prodotti
             </a>
           </li>
           <li>
-            <a href="./nuovo_prodotto.html" class="nav-link text-white">
+            <a href="./nuovo_prodotto.html" class="nav-link text-white fw-medium">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#grid"></use>
               </svg>
-              Nuovi Prodotti
+              <i class="fa-solid fa-plus"></i> Nuovi Prodotti
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link text-white">
+            <a href="#" class="nav-link text-white fw-medium">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#people-circle"></use>
               </svg>
-              Clienti
+              <i class="fa-solid fa-people-arrows"></i> Clienti
             </a>
           </li>
         </ul>
         <hr />
-        <div class="dropdown">
+        <div class="dropdown d-none d-md-block">
           <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
             data-bs-toggle="dropdown" aria-expanded="false">
             <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2" />
@@ -104,11 +104,85 @@
             <li><a class="dropdown-item" href="#">Sign out</a></li>
           </ul>
         </div>
+        <div class="d-md-none">
+          <ul class="list-group ps-5">
+            <li class="text-white"><a href=""></a>Impostazioni</li>
+            <li class="text-white"><a href=""></a>Profilo</li>
+            <li class="text-white"><a href=""></a>Esci</li>
+          </ul>
+
+        </div>
       </div>
 
       <!-- Main -->
-      <main class="col-md-8 col-lg-9">
-        Contenuto
+      <main class="col-md-8 col-lg-9 text-center bg-light">
+        <div class="mb-5">
+          <h1>Trova il piano perfetto per te!</h1>
+          <p>Scegli tra le nostre opzioni di abbonamento e goditi funzionalità esclusive e performance migliori.</p>
+          <h3>Porta la tua esperienza al livello successivo!</h3>
+          <a href="" class="btn btn-primary">Scopri di più</a>
+          <a href="" class="btn btn-outline-secondary">Contattaci</a>
+        </div>
+        <!-- container card -->
+        <div class="container">
+          <div class="row">
+            <!-- card -->
+            <div class="col-12 col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Gratis</h5>
+                  <div class="card-text pb-2">
+                    <span class="fw-bold fs-2">€0</span><span class="text-body-secondary fs-4">/mese</span>
+                  </div>
+                  <p>10 utenti</p>
+                  <p>2 Gb di spazio</p>
+                  <p>Pubblicità</p>
+                  <p>Supporto email</p>
+                  <a href="#" class="btn btn-outline-primary w-100">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Gratis</h5>
+                  <div class="card-text pb-2">
+                    <span class="fw-bold fs-2">€0</span><span class="text-body-secondary fs-4">/mese</span>
+                  </div>
+                  <p>10 utenti</p>
+                  <p>2 Gb di spazio</p>
+                  <p>Pubblicità</p>
+                  <p>Supporto email</p>
+                  <a href="#" class="btn btn-outline-primary w-100">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Gratis</h5>
+                  <div class="card-text pb-2">
+                    <span class="fw-bold fs-2">€0</span><span class="text-body-secondary fs-4">/mese</span>
+                  </div>
+                  <p>10 utenti</p>
+                  <p>2 Gb di spazio</p>
+                  <p>Pubblicità</p>
+                  <p>Supporto email</p>
+                  <a href="#" class="btn btn-outline-primary w-100">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            
+              <!-- card -->
+              <div class="col-12 col-lg-4">
+              </div>
+
+              <!-- card -->
+              <div class="col-12 col-lg-4">
+              </div>
+
+            </div>
+          </div>
       </main>
       <!-- /Main -->
     </div>
