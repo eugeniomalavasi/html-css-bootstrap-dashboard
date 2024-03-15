@@ -116,7 +116,41 @@
 
       <!-- Main -->
       <main class="col-md-8 col-lg-9">
-        Contenuto
+        <div class="text-center mt-4">
+          <h1>Crea nuovo prodotto</h1>
+          <p>i campi contassegnati con un asterisco (*) sono obbligatori. Le immagini devono essere in formato PNG e non
+            devono superare i 4 MB di dimensione</p>
+        </div>
+        <!-- form section -->
+        <!-- name form -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Il tuo bel nome">
+        </div>
+        <!-- price form -->
+        <div class="mb-4">
+          <label for="price" class="form-label">Prezzo</label>
+          <input type="text" class="form-control" id="price" placeholder="99.00">
+        </div>
+        <!-- select an option form -->
+        <span>Marca</span>
+        <select class="form-select mb-1" id="marca" aria-label="Default select example">
+          <option selected>---Seleziona---</option>
+          <option value="1">Samsung</option>
+          <option value="2">HTC</option>
+          <option value="3">Sonex One</option>
+        </select>
+        <!-- tex area form -->
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Inserisci qui la descrizione del prodotto con al massimo di 1000 caratteri" rows="4"></textarea>
+        </div>
+        <!-- choose file form -->
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-secondary bg-light" type="button">Scegli File</button>
+          <input type="text" class="form-control" placeholder="Immagine" id="immagine">
+          <button class="btn btn-outline-secondary bg-light" type="button">Immagine</button>
+        </div>
       </main>
       <!-- /Main -->
     </div>
