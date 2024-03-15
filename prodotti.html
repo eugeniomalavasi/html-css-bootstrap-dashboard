@@ -111,7 +111,53 @@
 
       <!-- Main -->
       <main class="col-md-8 col-lg-9">
-        Contenuto
+        <header class="mt-2 d-flex justify-content-between">
+          <h1>10 prodotti trovati</h1>
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <a href="" class="btn btn-outline-secondary">Esporta</a>
+            <a href="./nuovo_prodotto.html" class="btn btn-outline-secondary pb-0">Nuovo</a>
+          </div>
+        </header>
+        <hr>
+
+        <!-- table section -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col d-none d-md-block">Prezzo</th>
+              <th scope="col d-none">Stato</th>
+              <th scope="col">Azioni</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">
+                <div class="d-flex">
+                  <img src="./img/s22ultra.jpeg" class="" alt="article">
+                  <div class="">
+                    <p>Smartphone Samsung S-22 ultra</p>
+                    <p class="d-none d-xl-block">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
+                  </div>
+                </div>
+              </td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
       </main>
       <!-- /Main -->
     </div>
