@@ -127,41 +127,38 @@
           <!-- form section -->
           <!-- name form -->
           <div class="row">
-            <div class="d-none d-md-block col-md-3 ">
-              <p class="mb-4">Nome</p>
-              <p class="mb-4">Prezzo</p>
-              <p>Marca</p>
-            </div>
             <div class="col-12 col-md-9 col-lg-3 mb-3">
               <div>
-                <div class="mb-3">
-                  <label for="name" class="form-label d-md-none">Name</label>
+                <div class="mb-3 d-md-flex gap-3">
+                  <label for="name" class="form-label ">Name</label>
                   <input type="text" class="form-control" id="name" placeholder="Il tuo bel nome">
                 </div>
                 <!-- price form -->
-                <div class="mb-4">
-                  <label for="price" class="form-label d-md-none">Prezzo</label>
+                <div class="mb-4 d-md-flex gap-3">
+                  <label for="price" class="form-label ">Prezzo</label>
                   <input type="text" class="form-control" id="price" placeholder="99.00">
                 </div>
                 <!-- select an option form -->
-                <span class="d-md-none">Marca</span>
-                <select class="form-select mb-1" id="marca" aria-label="Default select example">
-                  <option selected>---Seleziona---</option>
-                  <option value="1">Samsung</option>
-                  <option value="2">HTC</option>
-                  <option value="3">Sonex One</option>
-                </select>
+                <div class="d-md-flex gap-3">
+                  <span class="">Marca</span>
+                  <select class="form-select mb-1" id="marca" aria-label="Default select example">
+                    <option selected>---Seleziona---</option>
+                    <option value="1">Samsung</option>
+                    <option value="2">HTC</option>
+                    <option value="3">Sonex One</option>
+                  </select>
+                </div>
               </div>
             </div>
             <!-- tex area form -->
-            <div class="mb-3 col-md-12 col-lg-4">
+            <div class="mb-3 col-md-12 col-lg-6">
               <label for="exampleFormControlTextarea1" class="form-label"></label>
               <textarea class="form-control" id="exampleFormControlTextarea1"
                 placeholder="Inserisci qui la descrizione del prodotto con al massimo di 1000 caratteri"
                 rows="4"></textarea>
             </div>
             <!-- choose file form -->
-            <div class="input-group .flex-nowrap mb-3 col-12 col-lg-12">
+            <div class="input-group mb-3 col-12 col-lg-12">
               <button class="btn btn-outline-secondary bg-light" type="button">Scegli File</button>
               <span class="input-group-text">Immagine</span>
               <button class="btn btn-outline-secondary bg-light" type="button">Immagine</button>
@@ -169,16 +166,16 @@
             <!-- item status radio group button -->
             <div class="btn-group col-12 col-md-4 col-lg-6 mb-3" role="group" aria-label="Basic radio toggle button group">
               <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-              <label class="btn btn-outline-secondary" for="btnradio1">Disponibile</label>
+              <label class="btn btn-outline-secondary btn-sm" for="btnradio1">Disponibile</label>
 
               <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-              <label class="btn btn-outline-secondary" for="btnradio2">Esaurito</label>
+              <label class="btn btn-outline-secondary btn-sm" for="btnradio2">Esaurito</label>
 
               <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-              <label class="btn btn-outline-secondary" for="btnradio3">Fuori Produzione</label>
+              <label class="btn btn-outline-secondary btn-sm" for="btnradio3">Fuori produzione</label>
 
-              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-              <label class="btn btn-outline-secondary" for="btnradio3">In arrivo</label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+              <label class="btn btn-outline-secondary btn-sm" for="btnradio">In arrivo</label>
             </div>
             <!-- input group checkbox form -->
             <div class="col-12 col-lg-6">
