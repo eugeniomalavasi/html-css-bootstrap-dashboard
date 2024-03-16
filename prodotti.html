@@ -109,7 +109,7 @@
         </div>
         <div class="d-md-none">
           <ul class="list-group ps-5">
-            <li class="text-white"><a href="" ></a>Impostazioni</li>
+            <li class="text-white"><a href=""></a>Impostazioni</li>
             <li class="text-white"><a href=""></a>Profilo</li>
             <li class="text-white"><a href=""></a>Esci</li>
           </ul>
@@ -127,6 +127,27 @@
           </div>
         </header>
         <hr>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Elimina prodotto</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                L'eliminazione sarà irreversibile
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Si,continua</button>
+                <button type="button" class="btn btn-outline-primary">Annulla</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <!-- table section -->
         <table class="table">
@@ -151,7 +172,12 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -165,7 +191,11 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -179,7 +209,11 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -193,7 +227,11 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -207,7 +245,11 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -221,7 +263,11 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -235,7 +281,11 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
+                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                  </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -249,7 +299,11 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
+                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                  </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -263,7 +317,11 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
+                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                  </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -277,7 +335,11 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
+                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                  </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -291,7 +353,11 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
+                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                  </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -305,7 +371,11 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
+                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                  </button>
+              </td>
             </tr>
             <tr>
               <td scope="row">
@@ -319,10 +389,12 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i></td>
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
+                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
+                  </button>
+              </td>
             </tr>
-           
-            
           </tbody>
         </table>
       </main>
