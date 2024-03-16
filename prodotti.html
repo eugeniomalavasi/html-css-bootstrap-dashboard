@@ -36,22 +36,21 @@
   <div class="container-fluid">
     <div class="row">
       <!-- Sidebar -->
-      <div class="sidebar col-md-4 col-lg-3 collapse d-md-block bg-dark vh-40" id="navbarSupportedContent">
+      <div class="sidebar col-md-4 col-lg-3 collapse d-md-block bg-dark" id="navbarSupportedContent">
         <a href="/"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none flex-column">
           <!-- user img -->
-          <svg class="bi pe-none me-2" width="40" height="32">
+          <svg class="pe-none" width="40" height="32">
             <use xlink:href="#bootstrap"></use>
           </svg>
           <!-- sidebar name -->
           <span class="fs-4 d-none d-md-block">Boostrap Dashboard</span>
           <hr class="border w-100 opacity-100 text-white">
         </a>
-        <hr />
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item fw-medium">
             <a href="./index.html" class="nav-link" aria-current="page">
-              <svg class="bi pe-none me-2" width="16" height="16">
+              <svg class="pe-none" width="16" height="16">
                 <use xlink:href="#home"></use>
               </svg>
               <i class="fa-solid fa-house"></i> Dashboard
@@ -59,23 +58,23 @@
           </li>
           <li>
             <a href="./sponsorizzazione.html " class="nav-link text-white fw-medium">
-              <svg class="bi pe-none me-2" width="16" height="16">
+              <svg class="pe-none" width="16" height="16">
                 <use xlink:href="#speedometer2"></use>
               </svg>
               <i class="fa-solid fa-chart-line"></i> Sponsorizzazione
             </a>
           </li>
           <li>
-            <a href="./prodotti.html" class="nav-link text-white active fw-medium">
-              <svg class="bi pe-none me-2" width="16" height="16">
+            <a href="./prodotti.html" class="nav-link text-white fw-medium">
+              <svg class="pe-none" width="16" height="16">
                 <use xlink:href="#table"></use>
               </svg>
               <i class="fa-solid fa-box-archive"></i> Prodotti
             </a>
           </li>
           <li>
-            <a href="./nuovo_prodotto.html" class="nav-link text-white fw-medium">
-              <svg class="bi pe-none me-2" width="16" height="16">
+            <a href="./nuovo_prodotto.html" class="nav-link text-white active fw-medium">
+              <svg class="pe-none" width="16" height="16">
                 <use xlink:href="#grid"></use>
               </svg>
               <i class="fa-solid fa-plus"></i> Nuovi Prodotti
@@ -83,7 +82,7 @@
           </li>
           <li>
             <a href="#" class="nav-link text-white fw-medium">
-              <svg class="bi pe-none me-2" width="16" height="16">
+              <svg class="pe-none" width="16" height="16">
                 <use xlink:href="#people-circle"></use>
               </svg>
               <i class="fa-solid fa-people-arrows"></i> Clienti
@@ -92,28 +91,26 @@
         </ul>
         <hr />
         <div class="dropdown d-none d-md-block">
-          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle ps-4"
             data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2" />
-            <strong>mdo</strong>
+            <img src="https://github.com/mdo.png" alt="user image" width="32" height="32" class="rounded-circle me-2" />
+            <strong>Pino Lavandino</strong>
           </a>
           <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-            <li><a class="dropdown-item" href="#">New project...</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+            <li><a class="dropdown-item" href="#">Profilo</a></li>
             <li>
               <hr class="dropdown-divider" />
             </li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
+            <li><a class="dropdown-item" href="#">Esci</a></li>
           </ul>
         </div>
         <div class="d-md-none">
-          <ul class="list-group ps-5">
-            <li class="text-white"><a href=""></a>Impostazioni</li>
-            <li class="text-white"><a href=""></a>Profilo</li>
-            <li class="text-white"><a href=""></a>Esci</li>
+          <ul class="list-group list-group-flush ps-3">
+            <li class="text-white list-group-item bg-dark border-bottom-0"><a href=""></a>Profilo</li>
+            <li class="text-white list-group-item bg-dark border-bottom-0"><a href=""></a>Esci</li>
+            <li class="text-white list-group-item bg-dark border-bottom-0"><a href=""></a>Impostazioni</li>
           </ul>
-
         </div>
       </div>
 
@@ -122,10 +119,11 @@
         <!-- main header -->
         <header class="mt-2 d-flex justify-content-between">
           <h1>10 prodotti trovati</h1>
-          <div class="btn-group" role="group" aria-label="Basic outlined example">
-            <a href="" class="btn btn-outline-secondary h-75">Esporta</a>
-            <a href="./nuovo_prodotto.html" class="btn btn-outline-secondary h-75">Nuovo</a>
+          <div class="btn-group h-50" role="group" aria-label="Basic outlined example">
+            <a href="" class="btn btn-outline-secondary ">Esporta</a>
+            <a href="./nuovo_prodotto.html" class="btn btn-outline-secondary ">Nuovo</a>
           </div>
+
         </header>
         <hr>
 
@@ -280,10 +278,10 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
-                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                  </button>
+                </button>
               </td>
             </tr>
             <tr>
@@ -298,10 +296,10 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
-                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                  </button>
+                </button>
               </td>
             </tr>
             <tr>
@@ -316,10 +314,10 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
-                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                  </button>
+                </button>
               </td>
             </tr>
             <tr>
@@ -334,10 +332,10 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
-                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                  </button>
+                </button>
               </td>
             </tr>
             <tr>
@@ -352,10 +350,10 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
-                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                  </button>
+                </button>
               </td>
             </tr>
             <tr>
@@ -370,10 +368,10 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
-                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                  </button>
+                </button>
               </td>
             </tr>
             <tr>
@@ -388,10 +386,10 @@
               </td>
               <td class="d-none d-md-table-cell">799.99€</td>
               <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i> 
-                  <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                  </button>
+                </button>
               </td>
             </tr>
           </tbody>
