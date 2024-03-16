@@ -116,60 +116,101 @@
 
       <!-- Main -->
       <main class="col-md-8 col-lg-9">
-        <div class="conta">
+        <div class="container">
           <div class="text-center mt-4">
             <h1>Crea nuovo prodotto</h1>
-            <p>i campi contassegnati con un asterisco (*) sono obbligatori. Le immagini devono essere in formato PNG e non
+            <p>i campi contassegnati con un asterisco (*) sono obbligatori. Le immagini devono essere in formato PNG e
+              non
               devono superare i 4 MB di dimensione</p>
           </div>
+
           <!-- form section -->
           <!-- name form -->
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Il tuo bel nome">
-          </div>
-          <!-- price form -->
-          <div class="mb-4">
-            <label for="price" class="form-label">Prezzo</label>
-            <input type="text" class="form-control" id="price" placeholder="99.00">
-          </div>
-          <!-- select an option form -->
-          <span>Marca</span>
-          <select class="form-select mb-1" id="marca" aria-label="Default select example">
-            <option selected>---Seleziona---</option>
-            <option value="1">Samsung</option>
-            <option value="2">HTC</option>
-            <option value="3">Sonex One</option>
-          </select>
-          <!-- tex area form -->
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Inserisci qui la descrizione del prodotto con al massimo di 1000 caratteri" rows="4"></textarea>
-          </div>
-          <!-- choose file form -->
-          <div class="input-group mb-3">
-            <button class="btn btn-outline-secondary bg-light" type="button">Scegli File</button>
-            <input type="text" class="form-control" placeholder="Immagine" id="immagine">
-            <button class="btn btn-outline-secondary bg-light" type="button">Immagine</button>
-          </div>
-          <!-- item status radio group button -->
-          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-            <label class="btn btn-outline-secondary" for="btnradio1">Disponibile</label>
-          
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-secondary" for="btnradio2">Esaurito</label>
-          
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-            <label class="btn btn-outline-secondary" for="btnradio3">Fuori Produzione</label>
-          
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-            <label class="btn btn-outline-secondary" for="btnradio3">In arrivo</label>
+          <div class="row">
+            <div class="d-none d-md-block col-md-3 ">
+              <p class="mb-4">Nome</p>
+              <p class="mb-4">Prezzo</p>
+              <p>Marca</p>
+            </div>
+            <div class="col-12 col-md-9 col-lg-3 mb-3">
+              <div>
+                <div class="mb-3">
+                  <label for="name" class="form-label d-md-none">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Il tuo bel nome">
+                </div>
+                <!-- price form -->
+                <div class="mb-4">
+                  <label for="price" class="form-label d-md-none">Prezzo</label>
+                  <input type="text" class="form-control" id="price" placeholder="99.00">
+                </div>
+                <!-- select an option form -->
+                <span class="d-md-none">Marca</span>
+                <select class="form-select mb-1" id="marca" aria-label="Default select example">
+                  <option selected>---Seleziona---</option>
+                  <option value="1">Samsung</option>
+                  <option value="2">HTC</option>
+                  <option value="3">Sonex One</option>
+                </select>
+              </div>
+            </div>
+            <!-- tex area form -->
+            <div class="mb-3 col-md-12 col-lg-4">
+              <label for="exampleFormControlTextarea1" class="form-label"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1"
+                placeholder="Inserisci qui la descrizione del prodotto con al massimo di 1000 caratteri"
+                rows="4"></textarea>
+            </div>
+            <!-- choose file form -->
+            <div class="input-group .flex-nowrap mb-3 col-12 col-lg-12">
+              <button class="btn btn-outline-secondary bg-light" type="button">Scegli File</button>
+              <span class="input-group-text">Immagine</span>
+              <button class="btn btn-outline-secondary bg-light" type="button">Immagine</button>
+            </div>
+            <!-- item status radio group button -->
+            <div class="btn-group col-12 col-md-4 col-lg-6 mb-3" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+              <label class="btn btn-outline-secondary" for="btnradio1">Disponibile</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="btnradio2">Esaurito</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="btnradio3">Fuori Produzione</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="btnradio3">In arrivo</label>
+            </div>
+            <!-- input group checkbox form -->
+            <div class="col-12 col-lg-6">
+              <div class="form-check border border-dark-subtle rounded mb-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  <p class=" mb-0 ms-2">Fotocamera principale</p>
+                  <p class="mb-1 text-secondary ms-2">foto di alta qualità e registrare video belli</p>
+                </label>
+              </div>
+              <div class="form-check border border-dark-subtle rounded mb-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  <p class=" mb-0 ms-2">Fotocamera principale</p>
+                  <p class="mb-1 text-secondary ms-2">foto di alta qualità e registrare video belli</p>
+                </label>
+              </div>
+              <div class="form-check border border-dark-subtle rounded mb-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  <p class=" mb-0 ms-2">Fotocamera principale</p>
+                  <p class="mb-1 text-secondary ms-2">foto di alta qualità e registrare video belli</p>
+                </label>
+              </div>
+            </div>
+           
           </div>
         </div>
-      </main>
-      <!-- /Main -->
     </div>
+    </main>
+    <!-- /Main -->
+  </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
