@@ -15,7 +15,7 @@
 <body>
   <header>
     <!-- navbar container bg dark -->
-    <nav class="navbar navbar-expand-md bg-dark d-md-none" data-bs-theme="dark">
+    <nav class="navbar  bg-dark d-md-none" data-bs-theme="dark">
       <!-- Container -->
       <div class="container">
         <!-- brand -->
@@ -35,368 +35,33 @@
 
   <div class="container-fluid">
     <div class="row">
-      <!-- Sidebar -->
-      <div class="sidebar col-md-4 col-lg-3 collapse d-md-block bg-dark" id="navbarSupportedContent">
-        <a href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none flex-column">
-          <!-- user img -->
-          <svg class="pe-none" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-          <!-- sidebar name -->
-          <span class="fs-4 d-none d-md-block">Boostrap Dashboard</span>
-          <hr class="border w-100 opacity-100 text-white">
-        </a>
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item fw-medium">
-            <a href="./index.html" class="nav-link" aria-current="page">
-              <svg class="pe-none" width="16" height="16">
-                <use xlink:href="#home"></use>
-              </svg>
-              <i class="fa-solid fa-house"></i> Dashboard
-            </a>
-          </li>
-          <li>
-            <a href="./sponsorizzazione.html " class="nav-link text-white fw-medium">
-              <svg class="pe-none" width="16" height="16">
-                <use xlink:href="#speedometer2"></use>
-              </svg>
-              <i class="fa-solid fa-chart-line"></i> Sponsorizzazione
-            </a>
-          </li>
-          <li>
-            <a href="./prodotti.html" class="nav-link text-white fw-medium active">
-              <svg class="pe-none" width="16" height="16">
-                <use xlink:href="#table"></use>
-              </svg>
-              <i class="fa-solid fa-box-archive"></i> Prodotti
-            </a>
-          </li>
-          <li>
-            <a href="./nuovo_prodotto.html" class="nav-link text-white fw-medium">
-              <svg class="pe-none" width="16" height="16">
-                <use xlink:href="#grid"></use>
-              </svg>
-              <i class="fa-solid fa-plus"></i> Nuovi Prodotti
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white fw-medium">
-              <svg class="pe-none" width="16" height="16">
-                <use xlink:href="#people-circle"></use>
-              </svg>
-              <i class="fa-solid fa-people-arrows"></i> Clienti
-            </a>
-          </li>
-        </ul>
-        <hr />
-        <div class="dropdown d-none d-md-block">
-          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle ps-4"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="user image" width="32" height="32" class="rounded-circle me-2" />
-            <strong>Pino Lavandino</strong>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-            <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-            <li><a class="dropdown-item" href="#">Profilo</a></li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li><a class="dropdown-item" href="#">Esci</a></li>
-          </ul>
-        </div>
-        <div class="d-md-none">
-          <ul class="list-group list-group-flush ps-3">
-            <li class="text-white list-group-item bg-dark border-bottom-0"><a href=""></a>Profilo</li>
-            <li class="text-white list-group-item bg-dark border-bottom-0"><a href=""></a>Esci</li>
-            <li class="text-white list-group-item bg-dark border-bottom-0"><a href=""></a>Impostazioni</li>
-          </ul>
-        </div>
-      </div>
-
+      
       <!-- Main -->
-      <main class="col-md-8 col-lg-9">
-        <!-- main header -->
-        <header class="mt-2 d-flex justify-content-between">
-          <h1>10 prodotti trovati</h1>
-          <div class="btn-group h-50" role="group" aria-label="Basic outlined example">
-            <a href="" class="btn btn-outline-secondary ">Esporta</a>
-            <a href="./nuovo_prodotto.html" class="btn btn-outline-secondary ">Nuovo</a>
-          </div>
-
-        </header>
-        <hr>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Elimina prodotto</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                L'eliminazione sarà irreversibile
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Si,continua</button>
-                <button type="button" class="btn btn-outline-primary">Annulla</button>
+      <main class="col-fluid vh-100 bg-dark bg-gradient text-white">
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="./img/homepage screenshot.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3">Offerte imperdibili!</h1>
+              <p class="lead">Scegli fra tanti articoli diversi utilizzando i filtri per trovare l'offerta imperdibile! I nostri piani di abbonamento ti faranno risparmiare tempo e soldi! come? i soldi li dai a noi così poi tu hai più tempo per vivere sotto le stelle ammirando il cosmo!</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="./sponsorizzazione.html" class="btn btn-primary btn-lg px-4 me-md-2">Offerte</a>
+                <a href="./prodotti.html" class="btn btn-primary btn-lg px-4 me-md-2">Prodotti</a>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- table section -->
-        <table class="table">
-          <thead>
-            <tr>
-              <th class="col">Nome</th>
-              <th class="col d-none d-md-table-cell">Prezzo</th>
-              <th class="col d-none d-lg-table-cell">Stato</th>
-              <th class="col">Azioni</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <div class="d-flex align-items-center">
-                  <img src="./img/s22ultra.jpeg" class="pe-2 object-fit-contain object-fit-contain" alt="article">
-                  <div>
-                    <p class="mb-1">Smartphone Samsung S-22 ultra</p>
-                    <p class="d-none d-xl-block mb-1">Display Amoled, Fotocamere super mega, batteria da 3 giorni</p>
-                  </div>
-                </div>
-              </td>
-              <td class="d-none d-md-table-cell">799.99€</td>
-              <td class="d-none d-lg-table-cell"> <i class="fa-regular fa-circle-check text-success"></i> </td>
-              <td class=""><i class="fa-solid fa-pen-to-square border border-primary rounded p-1 text-primary"></i>
-                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-trash-can border border-danger rounded p-1 text-danger"></i>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </main>
-      <!-- /Main -->
     </div>
+
+
+
+
+    </main>
+    <!-- /Main -->
+  </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
